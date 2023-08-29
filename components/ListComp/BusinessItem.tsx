@@ -20,12 +20,7 @@ function BusinessItem({item}:any ) {
         <div className="flex items-center p-1 hover:bg-[#f9f7f7] border-b-[2px] border-gray-600/40 gap-3
          group cursor-pointer transition duration-300">
             <div className='relative w-[80px] h-[80px] overflow-hidden rounded-lg'>
-            <Image src={item.reference ? `
-              https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=${item.reference}&key=AIzaSyBwtCo-JGWULMIKP1fojEaUIuLhxgt00QQ
-            ` : item.icon}
-                fill
-                alt="bsnsImage"
-                className='rounded-lg object-center group-hover:scale-125 transition-all duration-500 ease-out h-[80px] w-[80px]  object-cover '>
+            <Image src={item.reference ? `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=${item.reference}&key=AIzaSyBwtCo-JGWULMIKP1fojEaUIuLhxgt00QQ` : item.icon} fill alt="bsnsImage" className='rounded-lg object-center group-hover:scale-125 transition-all duration-500 ease-out h-[80px] w-[80px]  object-cover '>
 
             </Image>
             </div>
